@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+nav {
+    float: left;
+    position: sticky;
+    top: 0;
+    width: 5vw;
+}
+nav a img{
+    background-color: #bbd0ff;
+    width: 3vw;
+    padding: 15px;
+    border: 3px solid #3c5692;
+    margin-top: -1vh;
+}
+nav a img:hover {
+    box-shadow: rgb(0, 0, 0) 2.4px 2.4px 3.2px;
+}
+header {
+    background-color: #ffd6ff;
+}
+header img {
+    width: 100vw;
+    z-index: -1;
+    margin-top: -45vh;
+}
+#headerTxt {
+    position: absolute;
+    top: 19vh;
+    left: 21vw;
+    animation: floatIn 1s forwards;
+}
+#headerTxt h1 {
+    font-family: "Cherry Bomb One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6vw;
+    background: -webkit-linear-gradient(#cd92f7, #BBD0FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#headerTxt h2 {
+    font-size: 2vw;
+    font-family: "Merienda", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+#headerTxt p {
+    width: 25vw;
+    font-family: "Merienda", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 5%;
+    margin-bottom: 12%;
+}
+#headerTxt #contactMeHeaderBtn, #headerTxt #myWorkHeaderBtn {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c8b6ff;
+    font-size: 2vw;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#headerTxt #myWorkHeaderBtn {
+    background-color: #ffd6ff;
+}
+#headerTxt #contactMeHeaderBtn:hover, #headerTxt #myWorkHeaderBtn:hover {
+    box-shadow: rgb(83, 61, 123) 2.4px 2.4px 3.2px;
+}
+#headerTxt img {
+    width: 2vw;
+    margin-top: 10%;
+    margin-left: 2%;
+}
+
+/* keyframes */
+@keyframes floatIn {    
+    from {
+        margin-top: 100vh;
+    } to {
+        margin-top: 0vh;
+    }
+}
